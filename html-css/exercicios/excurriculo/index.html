@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- integrando css ao html -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- links das fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Meu portfólio</title>
+    <link rel="icon" type="image/x-icon" href="./images/lambda.png">
+</head>
+<body>
+    <h1>Meu Currículo</h1>
+</body>
+<header>
+    <div class="header container">
+        <div id="header-logo">
+            <img src="images/lambda.png" alt="logo lambda">
+        </div>
+        <nav class="header-navbar">
+            <ul class="flex-center">
+                <li><a href="#linksobre">Sobre Mim</a></li>
+                <li><a href="#linkportfolio">Portfólio</a></li>
+                <li><a href="#linkdadoscontato">Fale Comigo</a></li>
+            </ul>
+        </nav>
+        <nav class="header-social-media">
+            <ul class="flex-center">
+                <li>
+                    <a href="https://github.com/CaioMelloh" target="_blank">
+                        <i class="fa-brands fa-github-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/caio_mell0/" target="_blank">
+                        <i class="fa-brands fa-instagram-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section>
+    <div class="flex-center container">
+        <div id="imagem-sobre">
+            <img src="./images/me.jpg" alt="eu mesmo">
+        </div>
+        <div id="sobre">
+            <h1 id="linksobre">Sobre Mim</h1>
+            <p>Sou um profundo amante do conhecimento, gosto de aprender sobre novas tecnologias e culturas. Além disso, posso me considerar um grande fã da saga Star wars. <br> No geral, possuo conhecimento nas tecnologias: Java, HTML, CSS e um pouco de C <br> Para ferramentas, trabalho com as seguintes: NetBeans, DevC++, Git e VsCode</p>
+        </div>
+    </div>
+</section>
+<section>
+    <h1 id="linkportfolio">Portfólio</h1>
+    <div class=" gallery flex-center container">
+        <div class="flex-center gallery-card gallery-img" id="card-1">
+            <h2>Barber</h2>
+            <a href="#" target="_blank" class="gallery-card-btn">Ver Projeto</a>
+        </div>
+        <div class="flex-center gallery-card gallery-img" id="card-2">
+            <h2>Clínica</h2>
+            <a href="#" target="_blank" class="gallery-card-btn">Ver Projeto</a>
+            </div>
+            <div class="flex-center gallery-card gallery-img" id="card-3">
+                <h2>Pizzaria</h2>
+                <a href="#" target="_blank" class="gallery-card-btn">Ver Projeto</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section>
+    <h1 id="linkdadoscontato">Fale Comigo</h1>
+    <div class="flex-center container">
+        <div id="dados-contato">
+            <h2>Dados de contato: </h2>
+            <ul class="dados-pessoais">
+                <li>Telefone:</li>
+                <li>Email:</li>
+            </ul>
+            <h2>Créditos</h2>
+            <ul>
+                <li>créditos:</li>
+                <li>créditos:</li>
+            </ul>
+        </div>
+        <div id="form">
+            <p>Preencha o formulário abaixo e aguardo nosso contato:</p>
+            <form action="">
+                <label for="inputName">Digite seu nome</label>
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Digite seu nome:">
+                </div>
+                <label for="inputEmail">Digite seu E-mail</label>
+                <div class="form-group">
+                    <input type="email" name="email" id="Digite seu email:">
+                </div>
+                <label for="inputPhone">Digite seu telefone:</label>
+                <div class="form-group">
+                    <input type="text" name="phone" placeholder="Digite seu telefone:">
+                </div>
+                <label for="inputSubject"> Digite o assunto</label>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Digite o assunto:">
+                </div>
+                <label for="inputMessage">Digite a mensagem</label>
+                <div class="form-group">
+                    <textarea name="message" id=""rows="5">
+                        Deixe o seu recado....
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="ENVIAR" class="btn-submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <p>Portfólio do Caio. &copy; 2022</p>
+    </div>
+    <div class="whats">
+        <a href="https://web.whatsapp.com/browsers.html?missing=localstorage,sessionstorage">
+            <img src="./images/whatsapp.png" alt="logo whats">
+        </a>
+    </div>
+</footer>
+</html>
