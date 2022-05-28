@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens responsivas</title>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <p>testando em telas de diferentes proporções</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/plato-p.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="images/plato-m.jpg" type="image/jpg">
+        <img src="images/plato-g.jpg" alt="imagem-normal">
+        <!-- imagens com proporções disformes causam uma rolagem horizontal no site -->
+    </picture>
+
+    <p>Aqui você pode escutar um rock paulera da banda NEFFEX</p>
+    <audio src="midia/Enough - NEFFEX.mp3" autoplay controls></audio>
+    <b>
+        <p>Gostou do som deles? <a href="https://www.youtube.com/channel/UCBefBxNTPoNCQBU_Lta6Nvg" target="_blank">acesse o canal</a> deles no youtube e aprecie mais as obras do grupo.</p>
+    </b>
+    <br>
+    <p>aqui está um podcast do prof. Guanabara</p>
+    <audio src="midia/guanacast-33.mp3" autoplay controls></audio>
+<!-- testando para opções diversas em diversos navegadores -->
+<h1>aqui</h1>
+    <br>
+    <audio preload="metadata"controls autoplay>
+        <source srcset="midia/Enough - NEFFEX.mp3" type="audio/mpeg">
+        <source srcset="midia/Enough - NEFFEX.wav" type="audio/wav">
+        <source srcset="midia/Enough - NEFFEX.ogg" type="audio/ogg">
+    </audio>
+</body>
+</html>
