@@ -1,0 +1,54 @@
+h1{
+    margin-top: -5px;
+    border: 18px solid black;
+    border-left: 50px;
+    border-right: 50px;
+    text-align: center;
+    color: white;
+    background: black;
+    margin-left: 5px;
+}
+div{
+    margin-top: 400px;
+}
+p{  
+    
+    margin-left: 5px;
+    color: rgb(110, 39, 6);
+}
+
+body{
+    background: url(../images/heracles1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.estoa{
+    background: rgb(0, 0, 0);
+    padding: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    margin: 600px;
+  
+    
+
+}
+.container{
+    margin-top: 205px;
+    height: 85px;
+    padding: 8px;
+    border-radius: 18px;
+    background-color: black;
+    margin-bottom: 355px;
+}
+
+.container_2{
+    margin-top: 205px;
+    height: 80px;
+    padding: 4px;
+    background-color: black;
+}
+#especial{
+    color: white;
+    text-align: center;
+}

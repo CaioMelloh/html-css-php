@@ -1,0 +1,11 @@
+.container{
+    background-image: url(../images/galaxy.jpg);
+    background-size: contain; /*permite configurar a imagem no fundo disposto*/
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 750px;
+    margin: auto;
+}
+body{
+    background-color: aqua;
+}
