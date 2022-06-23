@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(104, 22, 22);
+}
+h1{
+    color: white;
+}
+p{
+    font-size: 2px;
+}
+.container{
+    background: black;
+    height: 22px;
+    margin-top: 25%;
+}
+a{
+    margin-top: 5px;
+    background: goldenrod;
+    border: 3px solid rgb(192, 185, 185);
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(72, 1, 139);
+    padding: 20px;
+    /* margin-left: 45%; */
+    margin: 45%;
+    margin-top: 45%;
+
+}
