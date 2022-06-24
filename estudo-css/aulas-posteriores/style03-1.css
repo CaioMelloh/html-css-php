@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to top, #053259, #3767A6 );
+}
+main{
+    background-color: #F2EB88;
+    width: 56%;
+    margin: auto;
+    border-radius: 5%;
+    padding: 2%;
+}
+h1{
+    color: #7756BF;
+    text-align: center;
+
+}

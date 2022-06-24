@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.box-degrade h1{
+    color: white;
+    font-weight: lighter;
+}
+/* reseta o nosso documento */
+.box-degrade{
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* com o flex eu consigo colocar o conteudo do texto no centro */
+    background-image: linear-gradient(to left, #F2B33D,#F28F38, #F2541B, #A6290D, #590505 );
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+/* key frames, onde está a nimação */
+@keyframes degrade-animado{
+0%{
+    background-position-x: 0% ;
+}
+100%{
+    background-position-x: 100%;
+}
+}
