@@ -14,4 +14,7 @@ console.log(++num); /*executa a operação antes de printar*/
 console.log(num); /*impressão já incrementada*/
 console.log(1===1);
 /*compara o  valor e o tipo*/
-console.log(1==='1');
+console.log(1 ==='1');
+console.log(1 == 1);
+console.log(1=='1');
+// n recomendável
