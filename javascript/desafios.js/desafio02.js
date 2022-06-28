@@ -11,9 +11,18 @@ function maiorEntreEles(a, b){
     }
     return maior;
 }
-console.log(maiorEntreEles(4,8));*/
+console.log(maiorEntreEles(4,8));*/ 
 
 
+/*utilizando o operador ternario*/
+function maiorEntreDois(a,b){
+    let maior = a > b ? a : b ;
+    return maior;
+}
+
+console.log(maiorEntreDois(88, 99));
+
+/*aprimoramento*/
 let maior;
 function maiorEntreEles(a, b, c){
     if(a<b || a<c){
