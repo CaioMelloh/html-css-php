@@ -17,6 +17,6 @@ function somaDosMultiplos(num){
         /*if(i % 5 == 0){
             multdecinco += i;
         }*/
-    }
+    }/***/
     /*return multdetres;*/
 }
