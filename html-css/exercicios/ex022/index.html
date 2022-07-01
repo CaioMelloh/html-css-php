@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c03658a5b9.js" crossorigin="anonymous"></script>
+    <style>
+       
+        a{
+            color: green;
+            text-decoration: none;
+            font-size: 22px;
+
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        a:visited{
+            color: purple;
+        }
+        #nintendo{
+            color: red;
+        }
+        #nintendo:visited{
+            color: chocolate;
+        }
+        #nintendo::after{
+            content: '☻';
+        }
+        #nintendo::before{
+            content: '☻';
+        }
+    </style>
+    <title>Links</title>
+</head>
+<body>
+ 
+    <h1>Personalizando Links</h1>
+    <h2><a href="https://www.youtube.com/" target="_blank" rel="external">Link do Youtube</a> <i class="fa-solid fa-house fa-2xs"></i></h2> 
+    <h2><a href="https://www.autopecas.com.br/" target="_blank" rel="external">Link do autopeças</a></h2>
+    <h2><a href="https://www.nintendo.com/pt-br/" target="_blank" rel="external" id="nintendo">Link da Nintendo</a></h2>
+</body>
+</html>
