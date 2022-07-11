@@ -5,3 +5,13 @@
 
 
 ### Resolução: Com esse desafio pude ter a noção de como as tecnologias HTML, CSS e JavaScript conversam entre si.
+## Fotos do desafio:
+
+![festaVip](https://user-images.githubusercontent.com/102704330/178309184-630242dd-d6bd-42f7-988c-d76b7f815b8a.png)
+
+## Testando com convidados permitidos:
+![testando1](https://user-images.githubusercontent.com/102704330/178309514-601b7d61-ff42-40f4-9231-b76902daf119.png)
+
+## Testando caso para não autorizado:
+![testando2](https://user-images.githubusercontent.com/102704330/178309819-0152f851-3e02-4987-857d-3241de885bda.png)
+
