@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url(images/background.jpg);
+
+        }
+        div{
+            background-color: rgb(228, 226, 226);
+            height: 100px;
+            padding: 4px;
+            margin: auto;
+            margin-bottom: 18px;
+            
+        }
+        #principal{
+          text-align: center;
+          color: rgb(3, 195, 3);
+        }
+       #caixa-central{
+            background-color: grey;
+            margin: auto;
+            color: black;
+            height: 300px;
+            width: 450px;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            
+        }
+
+    
+    </style>
+    <title>Segurança Virtual</title>
+</head>
+<body>
+    <div>
+        <h1 id="principal">Festa VIP</h1>
+    </div>
+   
+        <div id="caixa-central">
+            <h2>Bem-vindo a festa senhor(a)</h2>
+            <input type="text" id="nome" placeholder="Digite seu nome">
+            <h2>Quem te convidou para a festa?</h2>
+            <input type="text" placeholder="quem te convidou?" id="anfitriao">
+            <input type="submit"  value="Verificar se posso entrar" onclick="pegarDados()">
+            <h2>Você está permitido a entrar?</h1>
+            <p id="response">Pesquisando....</p>
+        </div>
+
+    <script>
+        function pegarDados(){
+            let convidado = document.getElementById('nome').value;
+            let anfitirion = document.getElementById('anfitriao').value;
+            const lista_inviters = ['Bruce Wayne', 'Harvey', 'Selina', "Mr. Cobblepot", 'Hera', 'Dr. Crane', 'Bane', 'Robin', 'Puddin', "Harley"];
+            for(let key of lista_inviters){
+                if(key === convidado || key === anfitirion){
+                    document.getElementById('response').innerText="Você pode entrar!";
+                    break;
+                }
+                else document.getElementById('response').innerText="Cai Fora!";
+            }
+        }
+    </script>
+</body>
+</html>
