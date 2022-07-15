@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		//sistema de cartões pelo salario
+		//>7000 -> "VIP" 4000-> gold ->2000 silver <2000 "comum"
+
+		let salary = prompt("Digite seu salário: ", "Ex: 2000");
+		let valueofCard;
+		
+		function analisarSalario(salary){
+			if(salary >= 7000){
+			valueofCard = "VIP";
+		}
+		else if(salary>=4000){
+			valueofCard = "gold";
+		}
+		else if(salary >= 2000){
+			valueofCard = "silver";
+		}
+		else{
+			valueofCard = "comum";
+		}
+		
+		}
+		
+		analisarSalario(salary);
+		
+		let response = "Você é um cliente ";
+		switch(valueofCard){
+			case "VIP":
+			response+= valueofCard;
+			break;
+			
+			case "gold":
+			response+= valueofCard;
+			break;
+
+			case "silver":
+			response+= valueofCard;
+			break;
+
+			case "comum":
+			response+= valueofCard;
+			break;
+
+		}
+		console.log(response);
+	</script>
+	<title>Switch Case</title>
+</head>
+<body>
+
+</body>
+</html>

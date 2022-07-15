@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //teste com notas
+        //aprovado - >= 7
+        //reprovado -> <7 (reprovado <= 4 ou recuperação -> >= 5 ou aprovado no conselho se  >=6.6);
+            let notas = 0;
+            let response;
+            notas = prompt("Digite sua nota final: ");
+            if(notas >= 7) document.write("Você passou, amigo");
+            else{
+                if(notas >= 6.6) document.write("O conselho irá decidir o seu destino!");
+                else if(notas >= 5) document.write("O conselho lhe concede uma recuperação!");
+                else if(notas <= 4) document.write("Você foi reprovado direto, sem direito ao conselho!");
+                
+            }
+    </script>
+    <title>if e else if</title>
+</head>
+<body>
+    <h1> Teste com else if e if</h1>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+
+	</style>
+	<script>
+		alert("Passe o mouse na região de mordor!");
+	</script>
+	<title>Map</title>
+</head>
+<body>
+	<h1>Mapa da terra média</h1> <!-- se eu quiser adicionar um mapa basta usar a tag map e seu filho area -->
+	<img src="download/mapaterra.jpg" usemap="#MapaMordor">  <!-- 3 a imagem escolhida precisa do usemap para ser linkada -->
+	 
+	 <!-- a tag map precisa de um name para ser identificável para a imagem escolhida  1-->	
+	<map name="MapaMordor">
+
+		<!-- para ter acesso as coords pode usar o paint vendo a imagem -->
+		<area alt="mordor" shape="circle" coords="550,284,50" href="https://en.wikipedia.org/wiki/Mordor" rel="external" target="_blank"> 
+
+		<!-- além disso a tag area usa os parâmetros alt = texto alternativo, coords = coordenadas, shape = forma, href = já que será um link mapeavel  2 -->
+	</map>
+
+</body>
+</html>

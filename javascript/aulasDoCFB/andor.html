@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let idade = 0;
+        let sexo = '';
+        let habilitado;
+        alert("Vamos fazer alguns testes aqui!");
+       idade= prompt("digite sua idade: ");
+       sexo = prompt("Digite seu sexo: ", "masculino ou feminino");
+       habilitado = confirm("Você é habilitado? (Aperte cancelar para responder não)");
+        if((idade >= 17) && (idade<= 40)){
+            if((sexo === 'masculino') && (habiltado === 'true')){
+                document.write("Você será motorista das tropas estelares!");
+            }
+            else
+                document.write("Você fará parte da tropa!");
+        }
+        else
+            document.write("Você foi dispensado!");
+    </script>
+    <title>And or</title>
+</head>
+<body>
+    <h1>Testes específicos</h1>
+    </body>
+</html>

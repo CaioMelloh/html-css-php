@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		h1{
+			text-align: center;
+		}
+	</style>
+	<script>
+		/*let cor = ["azul", "laranja"];
+		cor.push("vermelho"); //o metodo push insere no primeiro lugar vazio que encontra
+		console.log(cor);*/
+
+		let arsenal = ['nunchaku', 'katana', 'sai', 'porrete', 'clava', 'espada europeia'];
+		alert("escolha seus itens para a batalha contra o Razh'Agul!");
+		let mochila = [];
+		let escolha;
+		alert("Itens disponíveis: nunchaku', 'katana', 'sai', 'porrete', 'clava', 'espada europeia")
+
+		
+		lvl50 = confirm("Você é lvl 50 ou maior?");
+		
+		if(lvl50)
+		{
+			arsenal.push("machado");
+			alert("Você tem um novo item disponível! (machado viking)");	
+		} 
+			escolha = prompt("escreva o item que deseja: ");
+
+			switch(escolha){
+				case "nunchaku":
+					escolha = 0;
+					break;
+				case "katana":
+					escolha = 1;
+					break;
+				case "sai":
+					escolha = 2;
+					break;
+				case "porrete":
+					escolha = 3;
+					break;
+				case "clava":
+					escolha = 4;
+					break;
+				case "espada europeia":
+					escolha = 5;
+					break;
+				case "machado":
+					escolha = 6;
+					break;
+				}
+		mochila.push(escolha);
+		
+		document.write("<h1> Você escolheu " + arsenal[escolha] + "</h1>");
+
+	</script>
+	<title>Game</title>
+</head>
+<body>
+
+</body>
+</html>

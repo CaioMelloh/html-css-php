@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays</title>
+	<script>
+		let mala = ['cueca', 'camisa', 'calça', 'casaco'];
+		mala.unshift("tênis");
+		console.log(mala);
+		mala.push("chapéu"); /*adiciona um item ao final do array*/
+		mala.unshift("cinto");
+		console.log(mala); /* metodo unshift adiciona ao inicio e empurra todos os elementos para frente*/
+		mala.pop(); /*remove no final*/
+		console.log(mala);
+		mala.splice(2, 2); /*remove os itens escolhidos sendo os parametros: indice de inicio da remoção, quant de itens removidos*/
+		console.log(mala);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
