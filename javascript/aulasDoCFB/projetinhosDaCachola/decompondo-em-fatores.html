@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			background-color: black;
+			text-align: center;
+			color: white;
+		}
+	</style>
+	<script>
+		alert("Vamos decompor um número em fatores primos para você!");
+		let numero = prompt("Escolha um número para fatorar");
+
+		let result = decompor(numero);
+		/*console.log(comporExpoentes(decompor(18)));*/
+
+		function comporExpoentes(x){
+			
+			let numeros = x.split("|");
+			let response = [""];
+
+			if(numeros[0] != 0){
+				response+= "2^"+ numeros[0];
+			}
+			if(numeros[1] != 0){
+				response+= " 3^" + numeros[1];
+			}
+			if(numeros[2] != 0){
+				response+= " 5^" + numeros[2];
+			}
+			if(numeros[3] != 0){
+				response+= " 7^" + numeros[3];
+			}
+			else if(response == ''){
+				response+= "Não foi possível calcular esse número dentro da capacidade atual ou temos um número primo!"
+			}
+
+			return response;
+
+		}
+
+		function decompor(num){
+			let quant2 = 0, quant3 = 0, quant5 = 0, quant7 = 0;
+
+			if(num % 2 == 0)
+			{
+				while(num % 2 == 0)
+				{
+					quant2++;
+					num/= 2;
+				}
+
+			}
+			if(num % 3 == 0){
+				while(num % 3 == 0)
+				{
+					quant3++;
+					num/= 3;
+				}
+			}
+
+			if(num % 5 == 0){
+				while(num % 5 == 0)
+				{
+					quant5++;
+					num/= 5;
+				}
+			}
+			if(num % 7 == 0)
+			{
+				while(num % 7 == 0)
+				{
+					quant7++;
+					num/= 7;
+				}
+			}
+			return comporExpoentes(quant2 + "|" + quant3 + '|' + quant5 + '|' + quant7); 
+		}
+
+	</script>
+	<title>Decompowder</title>
+</head>
+<body>
+	<script>
+		document.write("<h1>" + numero + "= " + result + "</h1>");
+	</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		const convidados = ['João', 'josé', 'caio', 'maria', 'julia'];
+
+
+		/* metodo reverse e o metodo sort para o ordenamento de vetores*/
+		let ordem = [0,1,2,3,4,5,6];
+		let desordem = [7,4,5,2,9,1,3,6];
+		console.log(desordem.sort());
+		console.log(ordem.reverse());
+
+		/*o metodo join consegue unir elementos de uma array que são separados por virgula*/
+		let numerosCompletos = ordem.join();
+		console.log(numerosCompletos); /* dessa forma toda array posui apenas um elemento string*/
+		console.log(typeof(numerosCompletos));
+
+		/*for(let i = 0; i<convidados.length; i++){
+			document.write( "|" + convidados[i] + "|");
+		}*/
+
+		/*alert("Vamos verificar se você foi convidado: ");
+		let verify = prompt("Digite seu nome: ", "Ex : caio");
+		
+		let buscador = convidados.indexOf(verify);
+		if(buscador === -1){
+			document.write("<h1>Você não foi convidado!</h1>")
+		}
+		else document.write("<h1> Você pode entrar !</h1>")
+			*/
+		let mochila = [];
+		mochila.push("Canivete");
+		mochila.push("Guarda-chuva");
+		mochila.push("Espada");
+		mochila.push("porrete");
+
+		let cintoDeBugigangas = [];
+		cintoDeBugigangas.push("Batrangue");
+		cintoDeBugigangas.push("Akuma");
+		cintoDeBugigangas.push('mjolnir');
+		cintoDeBugigangas.push('joia do infinito');
+
+		/*metodo concat permite unir duas arrays em uma só*/
+		console.log(cintoDeBugigangas);
+		console.log(mochila);
+		let juncao = cintoDeBugigangas.concat(mochila);
+		console.log(juncao);
+		for(let j = 0; j<juncao.length; j++){
+			document.write("||" + juncao[j]);
+		}
+	</script>
+	<title>indexOF, sort, </title>
+</head>
+<body>
+	
+</body>
+</html>
