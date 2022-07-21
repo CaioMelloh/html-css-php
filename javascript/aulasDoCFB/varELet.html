@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		/*primeiro caso*/
+		var num = 5;
+		document.write(num);
+		if(num == 5){
+			num = 10;
+			document.write(num);
+		}
+		document.write(num);
+		/*tela : 5, 10, 10 (var num global e acessível a todos os escopos)*/
+
+		document.write('<hr>');
+
+		/*segundo caso*/
+		num1 = 10;
+		document.write(num);
+		if(num == 10){
+			let num1 = 5;
+			document.write(num1);
+		}
+		document.write(num1);
+		/* Tela : 10, 5, 10 (var let válida apenas no escopo de onde deriva, o if. Let num n é a mesma var que num global*/
+
+		document.write('<hr>');
+
+		/*terceiro caso*/
+
+		let num2 = 10
+		document.write(num);
+		if(num2 == 10){
+			num2 = 8;
+			document.write(num2);
+		}
+		document.write(num2);
+		/* tela: 10, 8, 8 (var let nesse caso se torna global por estar no escopo mais externo) */
+
+		document.write('<hr>');
+
+		/*quarto caso*/
+
+		let num3 = 5
+		document.write(num3);
+		if(num3 == 5){
+			let num3 = 10;
+			document.write(num3);
+		}
+		document.write(num3);
+		/* tela: 5, 10, 5 (var let num global não é a mesma do escopo do if)*/
+
+	</script>
+	<title>var e let</title>
+</head>
+<body>
+
+</body>
+</html>

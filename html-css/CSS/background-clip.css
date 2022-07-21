@@ -1,0 +1,19 @@
+#t1, #t2, #t3{
+	height: 200px;
+	width: 	auto;
+	padding: 5px;
+	background-color: 	gray;
+	border: 12px dotted blue;
+	margin-bottom: 	7px;
+	text-align: center;
+	padding-top: 65px;
+}
+#t1{
+		background-clip: border-box;
+}
+#t2{
+		background-clip: padding-box;
+}
+#t3{
+		background-clip: content-box;
+}

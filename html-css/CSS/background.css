@@ -1,0 +1,16 @@
+div{
+	background-color: 	white;
+	height: 150px;
+	width: 	auto;
+	border: 2px solid black;
+	background-image: 	url(download/g.png);
+	background-size: 100px;
+	background-repeat:  no-repeat;
+	background-position:  40px 5px;
+	/*propriedades background
+	background-position, color, image, size, repeat: ;*/
+}
+.boasvindas{
+	margin: auto;
+	text-align: center;
+}

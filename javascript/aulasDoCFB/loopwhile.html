@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Loop while</title>
+	<script>
+		/*while simples*/
+		let cont = 9; /*contador*/
+		while(cont >= 0){ /*condição*/
+			document.write(cont);
+			cont--; /*decremento do contador*/
+		}
+
+		document.write("<hr>");
+
+		/*forma simplificada*/
+		num = 10;
+		while(num--){
+			document.write(num);
+		}
+
+		document.write("<hr>");
+
+		/*forma mais complexa*/
+		num = true;
+		cont= 9;
+		while(num){
+			document.write(cont);
+			cont--;
+			if(cont <= -1){
+				num = false;
+			}
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
