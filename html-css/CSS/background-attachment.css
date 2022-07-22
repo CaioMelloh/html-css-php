@@ -1,0 +1,25 @@
+body{
+	background-image: url(download/coringa.jpg);
+	background-attachment: fixed;
+	background-size:  200px;
+
+
+}
+p, h1, h2{
+		color:  #0a0;
+}
+.center{
+	text-align: center;
+}
+#harley{
+	background-image: url(download/harley.png);
+	background-size: 200px;
+	background-attachment: scroll;
+	border: 4px solid #0b0;
+	height: 580px;
+	width: 	400px;
+	margin: auto;
+}
+div{
+	
+}

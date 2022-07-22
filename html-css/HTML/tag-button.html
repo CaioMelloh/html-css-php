@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		div{
+			text-align: center;
+			padding: 20px;
+		}
+		button{
+			background-color: #0b0;
+			color: white;
+			border: 4px solid black;
+			padding: 12px;
+			border-radius: 7px;
+		}
+		button:hover{
+			background-color: #fff;
+			color: #0b0;
+
+		}
+	</style>
+	<title>tag button</title>
+</head>
+<body>
+	<!--
+		parâmetros para type 
+		reset - para resetar todos os campos do form
+		submit - vai enviar os dados dos campos do form
+		button - padrão (default), pode ser programável com JS
+
+		onclick - ao clicar executa um script por exemplo
+		form : passando o id do formulário do qual está conectado
+		pode modificar o seu estilo com o css
+	-->
+	<div>
+		<button onclick="alert('Você foi convidado para a festa da dona Joana!');" form="testeform">
+			Clique aqui e venha ser feliz!
+		</button>	
+	</div>
+	
+</body>
+</html>

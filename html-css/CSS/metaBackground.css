@@ -1,0 +1,21 @@
+/*body{
+	background-image: url(download/coringa.jpg);
+	background-repeat:  no-repeat;
+	background-position: center 4px;
+	background-size: 400px;
+}
+*/
+div{
+	height: 400px;
+	width: 750px;
+	margin: 	auto;
+	background: url(download/coringa.jpg) no-repeat center  12px / 300px;
+}
+h1{
+	color:  green;
+}
+#yep:hover{
+	background: #FFF url(download/coringa.jpg) repeat center 100% / 300px;
+
+}
+/*forma resumida de declarar um background*/

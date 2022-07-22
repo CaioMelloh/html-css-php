@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>queryselectorAll</title>
+	<style>
+		div{
+			border: 1px solid black;
+			display: 	inline-block;
+			height: 100px;
+			padding: 	20px;
+
+		}
+		h1{
+			text-decoration: underline;
+			color: 	#f00;
+		}
+		a{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="elefanto">querySelectorAll</h1>
+	<p>O querySelectorAll é um método que retorna os elementos do documento que correspondem a uma classe de CSS ou a uma tag específica</p>
+	<h1 class="elefanto">Curso de JavaScript</h1>
+	<p>www.youtube.com.cfbcursos</p>
+	<p>cfbcursos.com.br</p>
+	<div>
+		<p class="elefanto">Este texto está dentro de uma div</p>
+		<p>Este também</p>
+	</div>
+	<a href="#">CANAL</a>
+	<a href="#">SITE</a>
+	<div class="turn">
+		<p>pequeno texto</p>
+		<p>pequeno texto2</p>
+	</div>
+	<hr>
+
+
+	<script>
+		var ps = document.querySelectorAll("p");
+		/*captura todos os elementos p similar a tagname*/
+		var modify = document.querySelectorAll(".elefanto");
+		/*captura todos os elementos que usufruem da classe elefanto*/
+
+
+		document.write("elementos capturados: " + "<br>");
+		for(let i= 0; i<modify.length; i++) 
+		{
+			document.write(modify[i].innerHTML + "<br>");
+		}	
+
+
+		/*capturando de elementos filhos contidos numa tag pai (pai>filho)*/
+		var divInp = document.querySelectorAll("div > p"); /*basta indicar a tag pai seguida do símbolo > e as tags filhas*/
+		console.log(divInp[0].innerHTML); /* permiti uma abordagem mais direta das tags */
+		console.log(divInp[1].innerHTML);
+
+		/* agora vamos capturar elementos dentro de uma div específica*/
+		selection = document.querySelectorAll("div.turn > p");
+		for(let i= 0; i<selection.length; i++){
+			console.log(selection[i].innerHTML);
+		}
+
+		/*agora vamos modificar todos os elementos de uma div sem distinções de tag*/
+		distinct = document.querySelectorAll("div.turn > *");
+		for(let j = 0; j<distinct.length; j++){
+			distinct[j].style.color="red";
+		}
+	</script>
+</body>
+</html>
