@@ -1,0 +1,36 @@
+body{
+	background-color: #000;
+}
+.center{
+	text-align: center;
+	color:  #a0b;
+}
+p{
+	text-align:  justify;
+}
+div{
+	background-color: #0d0;
+	margin: auto;
+	text-align: center;
+	width: 620px;
+	border-radius: 10px;
+	border: 1px solid #fff;
+}
+div button{
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #000;
+	border-radius:  20px;
+}
+dialog{
+	width: 620px;
+	background-image: url(download/april-fools-day-with-crazy-face-joker-hat-spring_24911-52876.jpg);
+	background-size: 660px;
+	background-repeat: no-repeat;
+	text-align: right;
+
+}
+#botaox{
+	background-color:  #f22;
+	border-radius: 3px;
+}

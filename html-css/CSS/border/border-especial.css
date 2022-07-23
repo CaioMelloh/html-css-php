@@ -1,0 +1,7 @@
+p{
+	width: 200px;
+	border-top: 20px solid #000;
+	border-left: 20px groove #0b0;
+	border-right: 20px double #00F;
+	border-bottom: 20px dashed #F00;
+}

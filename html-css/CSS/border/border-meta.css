@@ -1,0 +1,16 @@
+body{
+	background-color: #000;
+}
+div{
+	background-color: #aaa;
+	border:  2px solid #ab0;
+	height: 300px;
+	width: 300px;
+	margin: 20px;
+
+}
+#div1{
+	border-style: groove;
+	border-width: 20px;
+	border-color: #fff;
+}

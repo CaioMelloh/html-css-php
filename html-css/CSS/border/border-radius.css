@@ -1,0 +1,19 @@
+div{
+	border: 20px solid #000;
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+	margin-top: 20px ;
+
+}
+div p{
+	text-align: center;
+	padding: 40px;
+}
+#d2{
+	border: 20px solid #000;
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	margin-top: 20px ;
+}

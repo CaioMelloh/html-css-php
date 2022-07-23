@@ -3,11 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>	tag dfn</title>
+	<title>Festa dos vilões</title>
+	<script src="joker.js"></script>
+	<link rel="stylesheet" type="text/css" href="joker.css">
 </head>
 <body>
-		<!-- permite mostrar a definição de termos em um labelzinho-->
-		<h1>Curso de <dfn title="Linguagem de marcação de texto">HTML:</dfn> Hyper-Text Markup Language</h1>
+	<h1 class="center">Convite ao Batman</h1>
+	<div>
+		<button onclick="abrir()">Abra a carta</button>
+	</div>
+	
+	<dialog open id="abra">
+		<button onclick="fechar()" id="botaox">X</button>
+		<p>Querido morceguinho, é com muito prazer que te convidamos para a festa de gotham na inauguração semestral Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -20,7 +35,6 @@
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<!-- eu ainda posso misturar o abbr com o dfn -->
-		<h1>Curso de <abbr title="Cascading Style Sheets"><dfn>CSS</dfn></abbr>: Folhas de Estilo em Cascata</h1>
+	</dialog>
 </body>
 </html>

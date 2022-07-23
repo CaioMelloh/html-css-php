@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		div{
+			text-align: right;
+		}
+		.fechar button{
+			background-color: #f00;
+			border-radius: 14px;
+			width: 40px;
+
+		}
+		.abrir{
+			text-align: center;
+			padding: 20px;
+		}
+		.abrir button{
+			background-color: #0b0;
+			padding: 7px;
+			width: 78px;
+			height: 32px;
+			border-radius: 14px;
+		}
+		
+	</style>
+	<script>
+		function Abrir(){
+			var p = document.getElementsByTagName("dialog")[0];
+			p.setAttribute("open", " ");	
+		}
+		function fechar(){
+			var l = document.getElementsByTagName("dialog")[0].removeAttribute("open");
+		}
+		
+
+	</script>
+	<title>tag dialog</title>
+</head>
+<body>
+	<div class="abrir">
+	<button onclick="Abrir()">Abrir</button>
+	</div>
+
+	<dialog open>
+		<div class="fechar">
+			<button onclick="fechar()">X</button>
+		</div>
+
+		<h1>Texto especial para você!</h1>
+
+		<img src="download/mapaterra.jpg">
+
+		<p>Mapa da terra média sobre o mundo de Tolkien em sua primeiríssima obra O Hobbit</p>
+	</dialog>
+	
+</body>
+</html>
