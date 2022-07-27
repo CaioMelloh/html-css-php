@@ -15,33 +15,51 @@
 		let numero = prompt("Escolha um número para fatorar");
 
 		let result = decompor(numero);
-		/*console.log(comporExpoentes(decompor(18)));*/
 
 		function comporExpoentes(x){
 			
 			let numeros = x.split("|");
 			let response = [""];
-
-			if(numeros[0] != 0){
+			numeros = tratamento(numeros);
+			console.log(numeros);
+			
+			if(numeros[0] != 'c'  && numeros[0] != undefined){
 				response+= "2^"+ numeros[0];
+				if(numeros.length > 1) response+= " * ";
 			}
-			if(numeros[1] != 0){
-				response+= " 3^" + numeros[1];
+			if(numeros[1] != 'c' && numeros[1] != undefined){
+				response+= "3^" + numeros[1];
+
+				if(numeros.length > 1 && numeros[2] > 0) response+= " * ";
 			}
-			if(numeros[2] != 0){
-				response+= " 5^" + numeros[2];
+			if(numeros[2] != 'c' && numeros[2] != undefined){
+				response+= "5^" + numeros[2];
+				if(numeros.length > 1 && numeros[3] > 0) response+= " * ";
 			}
-			if(numeros[3] != 0){
-				response+= " 7^" + numeros[3];
+			if(numeros[3] != 'c' && numeros[3] != undefined){
+				response+= "7^" + numeros[3];
 			}
 			else if(response == ''){
 				response+= "Não foi possível calcular esse número dentro da capacidade atual ou temos um número primo!"
 			}
 
-			return response;
+			/*caso numero 84*/
+				
+				console.log(response);
 
 		}
 
+		function tratamento(array){
+			while(array.indexOf("0") != -1)
+			{
+				test = array.indexOf("0");
+				array[test] = 'c';	
+			}
+			
+			return array;
+		}
+
+		
 		function decompor(num){
 			let quant2 = 0, quant3 = 0, quant5 = 0, quant7 = 0;
 
