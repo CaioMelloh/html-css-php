@@ -1,0 +1,25 @@
+body{
+	margin: 0px;
+}
+p{
+	border: 1px solid #f00;
+	margin:  auto;
+	width: 100px;
+	text-align: center; /*manipula o conteúdo do p*/
+}
+
+#divesp{
+	
+	height: 400px;
+	
+	width: 400px;
+
+}
+div{
+	border: 1px solid #000;
+	padding: 0;
+	width: 200px;
+	margin: auto;
+	height: 200px;
+	margin-bottom: 22px;
+}

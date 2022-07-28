@@ -1,0 +1,25 @@
+body{
+	margin: 0;
+}
+
+div{
+	border: 1px solid #000;
+	margin: auto;
+	margin-bottom: 100px;
+	width: 200px;
+	padding: 50px;
+	text-align: center;
+
+}
+#especial{
+	width: 400px;
+	padding: 100px;
+	text-align: center;
+
+}
+#div3{
+	margin-bottom: 100px;
+	width: 150px;
+	padding: 25px;
+	text-align: center;
+}

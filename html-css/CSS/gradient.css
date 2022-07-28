@@ -1,0 +1,14 @@
+div{
+	width: 300px;
+	margin-left: 100px;
+	height: 300px;
+	border:  1px solid #000;
+	background: linear-gradient(to left, #f00, #ff0);
+	display: inline-flex;
+}
+#div1{
+	background: radial-gradient(circle, #f00, #ff0);
+}
+#div2{
+	background: repeating-radial-gradient(circle, #f00, #ff0, #fff);
+}

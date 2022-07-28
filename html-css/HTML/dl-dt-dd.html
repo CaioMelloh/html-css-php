@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		function mostrardesc(){
+			var acess = document.getElementById("desc").style.display;
+			if(acess != "block"){
+				mostrardisplay();
+				var btn = document.getElementsByTagName("button")[0];
+				btn.innerHTML="Ocultar";
+			}
+			else{
+				ocultardisplay();
+				var btn = document.getElementsByTagName("button")[0];
+				btn.innerHTML="Mostrar";		
+			} 
+		}
+		function ocultardisplay(){
+			var acess = document.getElementsByTagName("dd")[0];
+			var acess2 = document.getElementsByTagName("dd")[1];
+			acess.style.display = "none";
+			acess2.style.display = "none";
+		}
+		function mostrardisplay(){
+			var acess = document.getElementsByTagName("dd")[0];
+			var acess2 = document.getElementsByTagName("dd")[1];
+			acess.style.display = "block";
+			acess2.style.display = "block";
+		}
+	</script>
+	<style>
+		body{
+			background-color: #000;
+		}
+		dl{
+			background-color: #eee;
+			border: 3px solid #ddd;
+			padding: 16px;
+			width: 800px;
+			margin: auto;
+			margin-bottom: 19px;
+			border-radius: 12px;
+		}
+		dt{
+			color: #0d0;
+			font-size: 19px;
+			margin-bottom: 2px;
+		}
+		#desc{
+			color: #00d;
+			display: none;
+		}
+		button{
+			position: absolute;
+			top: 28px;
+			left: 430px;
+		}
+	</style>
+	<title>dl-dt-dd</title>
+</head>
+<body>
+	<dl>
+		<dt>Curso de HTML</dt>
+		<button onclick="mostrardesc()">CLIQUE AQUI</button>
+		<dd id="desc">Esse curso contêm as melhores abordagens disciplinares sobre o assunto citado acima. Com tecnologia de ponta para te ajudar a entrar no mercado</dd>
+		<dd id="desc">Se você indicar um amigo irá levar um bônus de um curso de PHP gratuito!!</dd>
+		<dt>Curso de CSS</dt>
+		<dd>Aqui  teremos as melhores práticas no que tange aos estilos para sua página ficar com cara de profissional e chamar a atenção do seu recrutador!!!</dd>
+
+	</dl>
+	<dl>
+		<dt>Curso de HTML</dt>
+		<dd>Esse curso contêm as melhores abordagens disciplinares sobre o assunto citado acima. Com tecnologia de ponta para te ajudar a entrar no mercado</dd>
+		<dd>Se você indicar um amigo irá levar um bônus de um curso de PHP gratuito!!</dd>
+		<dt>Curso de CSS</dt>
+		<dd>Aqui  teremos as melhores práticas no que tange aos estilos para sua página ficar com cara de profissional e chamar a atenção do seu recrutador!!!</dd>
+		
+	</dl>
+	<dl>
+		<dt>Curso de HTML</dt>
+		<dd>Esse curso contêm as melhores abordagens disciplinares sobre o assunto citado acima. Com tecnologia de ponta para te ajudar a entrar no mercado</dd>
+		<dd>Se você indicar um amigo irá levar um bônus de um curso de PHP gratuito!!</dd>
+		<dt>Curso de CSS</dt>
+		<dd>Aqui  teremos as melhores práticas no que tange aos estilos para sua página ficar com cara de profissional e chamar a atenção do seu recrutador!!!</dd>
+		
+	</dl>
+</body>
+</html>
