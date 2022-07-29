@@ -4,11 +4,28 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
+		ul li{
+			display: inline-flex;
+			margin-right: 5px;
+			margin: 5px;
+
+		}
+		body{
+			margin: 0;
+			position: static;
+		}
 		.titulo{
 			text-align: center;
+			background-color: black;
+			color: #fff;
+			width: 100%;
+			height: 110px;
+			position: absolute;
+			top: 0;
 		}
 		.cards{
 			display:  flex;
+			margin-top: 120px;
 		}
 		.card{
 			background-color: #eee;
@@ -20,6 +37,14 @@
 		}
 		#joker{
 			background-color: #0b0;
+		}
+		#rodape{
+			background-color: #f00;
+			height: 60px;
+			position: relative;
+			bottom: 0px;
+			top: 350px;
+			
 		}
 		.card h1{
 			text-align: center;	
@@ -33,6 +58,7 @@
 			<h1>Seção de cartas</h1>
 			<p>Esse jogo é meravilhoso para aliviar o estresse</p>
 		</div>
+
 
 		<div class="cards">
 			<div class="card">
@@ -63,6 +89,14 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			</div>
 		</div>
+	</div>
+
+	<div id="rodape">
+		<ul>
+			<li>Sessão de Rodapé</li>
+			<li>Ideal para morangos</li>
+			<li>Bom para as frutas</li>
+		</ul>
 	</div>
 </body>
 </html>
